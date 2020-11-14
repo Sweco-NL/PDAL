@@ -80,3 +80,7 @@ endif()
 if(BUILD_PLUGIN_HACKATHON)
     add_subdirectory(hackathon)
 endif()
+
+if(BUILD_PLUGIN_HACKATHONTOO)
+    add_subdirectory(hackathontoo)
+endif()
