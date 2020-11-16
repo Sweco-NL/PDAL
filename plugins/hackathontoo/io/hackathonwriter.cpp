@@ -337,7 +337,7 @@ namespace pdal
     log()->get(LogLevel::Debug2) << " - frac (" << fracX << ", " << fracY << ")\n";
 
     const unsigned int pixelX = static_cast<unsigned int>(fracX * 1000);
-    const unsigned int pixelY = static_cast<unsigned int>(fracY * 1000);
+    const unsigned int pixelY = 999 - static_cast<unsigned int>(fracY * 1000);
 
     log()->get(LogLevel::Debug2) << "- pixel (" << pixelX << ", " << pixelY << ")\n";
 
